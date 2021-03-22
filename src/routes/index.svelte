@@ -33,13 +33,21 @@
       
         h1 {
           text-align: center;
+		  text-size-adjust: 2em;
+		  padding-top:3em;
+		
         }
         
-         
+        p{
+			padding-top: 3em;
+			padding-bottom: 3em;
+			padding-left: 3em;
+			padding-right:3em;
+		} 
        
 
       main {
-        background-color:deeppink;
+        text-align: center;
       }
       
         Header { grid-area: h; }
