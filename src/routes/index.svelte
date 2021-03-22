@@ -1,51 +1,70 @@
 <script>
-	import Counter from '$lib/Counter.svelte';
+	import Header from "$lib/Header.svelte";
+	import Nav from "$lib/Nav.svelte";
+	import Footer from "$lib/Footer.svelte";
 </script>
 
+<Header />
+
+<Nav />
+
 <main>
-	<a href="/bulma-demo" class="button is-primary">goto demo page</a>
-	<h1>Hello world!</h1>
+	<h1>
+    YouTube’s Biggest Channels
+      </h1>
+    </div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="vs-code.html">Music</a>
+  <a href="github.html">Education</a>
+  <a href="netlify.html">Entertainment</a>
+</nav>
 
-	<Counter />
+<main></main>
+    <h2>
+      What is YouTube?
+    </h2>
+   
+    <p>
+      YouTube is a free video sharing website on the internet. The website lets people upload, view, and share videos. YouTube was started on February 14, 2005 by three former workers of PayPal. Google (a search engine company) has owned and operated YouTube since 2006. YouTube now carries paid advertisements on all pages.
 
-	<p>Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
-</main>
+      Videos can be rated with likes or dislikes, and viewers can subscribe to channels they like. Videos can be commented on if viewers log into their own accounts. The number of times a video has been watched, known as "views", are shown.
+      
+      Many different types of videos can be put onto the website, such as educational content, animations, and events.
+      
+    </p>
+  </main>
+    <style>
+        * {
+          font-family: sans-serif;
+        }
+      
+        h1 {
+          text-align: center;
+        }
+        
+         /* CSS property for nevigation menu */ 
+         .nav_menu { 
+            overflow: hidden; 
+            background-color: #5d2a42; 
+        }
+       }
 
-<style>
-	:root {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-
-	main {
-		text-align: center;
-		padding: 1em;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 4rem auto;
-		max-width: 14rem;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-
-		p {
-			max-width: none;
-		}
-	}
-</style>
+      main {
+        background-color:deeppink;
+      }
+      </style>
+      <style>
+        header { grid-area: h; }
+        nav    { grid-area: n; }
+        main   { grid-area: m; }
+      
+        main {
+          display: grid;
+          grid: "h    h    h  "  
+                "n    h    h  " 
+                "m    m    m  " 
+                /1fr  fr  1fr;
+        }
+		</style>
+		
